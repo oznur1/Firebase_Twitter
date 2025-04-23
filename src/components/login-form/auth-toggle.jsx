@@ -1,11 +1,13 @@
-import React from 'react'
-
-const AuthToggle = () => {
+const AuthToggle = ({ isSign, setIsSign }) => {
   return (
-    <div>
-      AuthToggle
-    </div>
-  )
-}
+    <p className="mt-5 select-none">
+      <span className="text-gray-500">{isSign ? "Hesabınız varsa" : "Hesabınız yoksa"}</span>
 
-export default AuthToggle
+      <span className="cursor-pointer ms-2 text-blue-500 hover:underline" onClick={() => setIsSign(!isSign)}>
+        {isSign ? "Giriş Yapın" : "Kaydolun"}
+      </span>
+    </p>
+  );
+};
+
+export default AuthToggle;
