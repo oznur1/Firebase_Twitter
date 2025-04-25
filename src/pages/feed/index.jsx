@@ -1,6 +1,6 @@
-import { signOut } from 'firebase/auth'
+
 import React from 'react'
-import { auth } from '../../firebase'
+
 import Nav from './nav'
 import Main from './main'
 import Aside from './aside'

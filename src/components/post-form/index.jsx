@@ -6,6 +6,7 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../../firebase";
 import { useRef, useState } from "react";
 import Preview from "./preview";
+import uploadToStorage from "../../firebase/uploadToStorage";
 
 const PostForm = ({ user }) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -73,27 +74,20 @@ const PostForm = ({ user }) => {
       setIsLoading(false);
     }
   };
- 
- 
- 
- 
- 
- 
-        return (
-    <div className='border-b border-tw-gray p-4 flex gap-3'>
-      <UserAvatar photo={user.photoURL} name={user.displayName}/>
- 
 
-      <form  onSubmit={handleSubmit}
-      className='w-full pt-1'>
-      <TextArea/>
-      
-      <Preview isLoading={isLoading} src={preview} clearImage={clearImage} />
-      
-      <FormActions isLoading={isLoading} fileRef={fileRef} onImageChange={onImageChange}/>
+  return (
+    <div className="border-b border-tw-gray p-4 flex gap-3">
+      <UserAvatar photo={user.photoURL} name={user.displayName} />
+
+      <form onSubmit={handleSubmit} className="w-full pt-1">
+        <TextArea />
+
+        <Preview isLoading={isLoading} src={preview} clearImage={clearImage} />
+
+        <FormActions isLoading={isLoading} fileRef={fileRef} onImageChange={onImageChange} />
       </form>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default PostForm
+export default PostForm;

@@ -2,7 +2,7 @@ import { signInWithPopup } from 'firebase/auth'
 import React from 'react'
 import { auth,google } from '../../firebase'
 import { useNavigate } from 'react-router-dom'
-
+import { toast } from "react-toastify";
 
 const GoogleButton = () => {
     const navigate=useNavigate();
