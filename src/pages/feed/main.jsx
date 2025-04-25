@@ -1,9 +1,21 @@
 import React from 'react'
+import PostForm from '../../components/post-form'
+import List from './list'
 
-const Main = () => {
+
+const Main = ({user}) => {
   return (
     <div className='border border-tw-gray overflow-y-auto'>
-    MAİN  
+   <header className='border-b border-tw-gray p-4 font-bold'>Anasayfa</header>
+    
+    
+    <PostForm user={user}/>
+
+
+    <List/>
+    
+    
+    
     </div>
   )
 }
