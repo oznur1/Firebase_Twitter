@@ -26,20 +26,13 @@ People who are into React and Firebase projects
 
 🔑 uuid
 
-🚀 Current Features
 
-Tweeting and replying 💬
 
-Real-time updates 🔄
 
-Secure login and registration 🔐
 
-Mobile-responsive design 📱
+https://github.com/user-attachments/assets/a7f11c0e-2723-4767-9bd4-0c091cfd2481
 
-🔧 Areas for Further Development
 
-User follow system 👥
 
-Emoji and like system 👍❤️
 
-Polls and stories 📊🎥
+
